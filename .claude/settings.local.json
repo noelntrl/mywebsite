@@ -3,7 +3,9 @@
     "allow": [
       "Bash(git push *)",
       "Bash(sips -g pixelWidth -g pixelHeight \"/Users/xoxo/Documents/My website/ASSETS/CASE STUDY/BFRC/bfrc product 1.jpg\" \"/Users/xoxo/Documents/My website/ASSETS/CASE STUDY/BFRC/bfrc product 2.jpg\")",
-      "Bash(sips -g pixelWidth -g pixelHeight \"/Users/xoxo/Documents/My website/ASSETS/CASE STUDY/BFRC/bfrc 1.jpeg\" \"/Users/xoxo/Documents/My website/ASSETS/CASE STUDY/BFRC/bfrc 2.jpeg\")"
+      "Bash(sips -g pixelWidth -g pixelHeight \"/Users/xoxo/Documents/My website/ASSETS/CASE STUDY/BFRC/bfrc 1.jpeg\" \"/Users/xoxo/Documents/My website/ASSETS/CASE STUDY/BFRC/bfrc 2.jpeg\")",
+      "Bash(ffprobe -v error -select_streams v:0 -show_entries stream=width,height -of csv=p=0 \"ASSETS/CASE STUDY/Amore pacific/amorepacific.mp4\")",
+      "Bash(sips -g pixelWidth -g pixelHeight \"/Users/xoxo/Documents/My website/ASSETS/CASE STUDY/Amore pacific/awardproof.jpg\")"
     ]
   }
 }
