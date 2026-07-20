@@ -15,7 +15,17 @@
       "Bash(curl -s \"https://noelntrl.com/performance-creative-v2.html\")",
       "Bash(curl -s \"https://noelntrl.com/campaigns.html\")",
       "Bash(curl -sI \"https://noelntrl.com/campaigns.html\")",
-      "Bash(git add *)"
+      "Bash(git add *)",
+      "Bash(git commit -m ' *)",
+      "Bash(curl -s -o /dev/null -w \"campaigns: %{http_code}\\\\n\" \"https://noelntrl.com/campaigns\")",
+      "Bash(curl -s -o /dev/null -w \"performance-creative: %{http_code}\\\\n\" \"https://noelntrl.com/performance-creative\")",
+      "Bash(curl -s -o /dev/null -w \"bfrc-case-study: %{http_code}\\\\n\" \"https://noelntrl.com/bfrc-case-study\")",
+      "Bash(curl -sI \"https://noelntrl.com/performance-creative\")",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\\\\n\" \"https://noelntrl.com/performance-creative/\")",
+      "Bash(curl -s -o /dev/null -w \"github.io direct: %{http_code}\\\\n\" \"https://noelntrl.github.io/mywebsite/performance-creative/\")",
+      "Bash(curl -s \"https://raw.githubusercontent.com/noelntrl/mywebsite/main/performance-creative/index.html\")",
+      "Bash(ls *.html)",
+      "Bash(grep -rl \"homepage-old-v1\\\\|campaigns-old\\\\|performance-creative-v2-old\" . --include=\"*.html\")"
     ]
   }
 }
